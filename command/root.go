@@ -447,7 +447,7 @@ func ExpandAlias(args []string) (expanded []string, isShell bool, err error) {
 			return
 		}
 
-		newArgs := []string{}
+		var newArgs []string
 		newArgs, err = shlex.Split(expansion)
 		if err != nil {
 			return
