@@ -110,8 +110,6 @@ func TestIssueStatus_disabledIssues(t *testing.T) {
 	}
 }
 
-// TODO non-tty tests for IssueList
-
 func TestIssueList_nontty(t *testing.T) {
 	initBlankContext("", "OWNER/REPO", "master")
 	defer stubTerminal(false)()
